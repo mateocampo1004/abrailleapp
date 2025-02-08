@@ -1,0 +1,94 @@
+/* src/styles/Research.css */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .research-container {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f5faff;
+    flex: 1; /* Para que el footer se mantenga al final */
+  }
+  
+  .research-container h1 {
+    color: #003366;
+    margin-bottom: 10px;
+    font-size: 2.8rem;
+  }
+  
+  .research-intro {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    font-size: 1.2rem;
+    color: #0056b3;
+  }
+  
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    border: 2px solid #003366;
+    border-radius: 12px;
+    padding: 20px;
+    text-decoration: none;
+    color: #003366;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card:hover {
+    background-color: #003366;
+    color: #ffffff;
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  @media (max-width: 600px) {
+    .cards-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .footer {
+    background-color: #003366;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+    margin-top: auto; /* Mantiene el footer en la parte inferior */
+  }
+  .video-wrapper {
+    max-width: 400px; /* Limita el ancho máximo a 400px */
+    margin: 0 auto;   /* Centra el video */
+    padding: 10px;    /* Espacio alrededor del video */
+    border: 2px solid #ccc; /* Borde */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #f0f0f0; /* Fondo suave */
+  }
+  
+  .video-section {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .video-wrapper video {
+    width: 100%;  /* Hace que el video ocupe todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción original del video */
+    display: block;
+  }
+  

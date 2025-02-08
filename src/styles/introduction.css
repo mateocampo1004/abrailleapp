@@ -1,0 +1,85 @@
+/* Contenedor principal de la sección */
+.section-container {
+    padding: 30px;
+    background-color: #ffffff; /* Fondo blanco limpio */
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center; /* Centrado del contenido */
+  }
+  
+  /* Título principal de la sección */
+  .section-title {
+    font-size: 2.8em; /* Tamaño destacado */
+    color: #2c3e50; /* Color oscuro profesional */
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Estilo de los párrafos */
+  .section-paragraph {
+    font-size: 1.2em;
+    line-height: 1.7;
+    color: #34495e; /* Texto suave */
+    margin: 15px 0;
+    text-align: justify; /* Justificado para un diseño más pulido */
+  }
+  
+  /* Estilo para imágenes adaptables */
+  .image-container {
+    margin: 25px 0;
+  }
+  
+  .responsive-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+  }
+  
+  .responsive-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Sombra al hacer hover */
+  }
+  
+  /* Contenedor para el botón */
+  .button-container {
+    display: flex;
+    justify-content: center; /* Centramos el botón */
+    margin-top: 30px;
+  }
+  
+  /* Estilo para el botón de retroceso */
+.back-button {
+    background-color: #007aff; /* Azul brillante similar al de Apple */
+    color: white; /* Texto en blanco */
+    padding: 12px 20px; /* Padding más suave */
+    border-radius: 8px; /* Bordes redondeados suaves */
+    text-decoration: none; /* Eliminar subrayado en el enlace */
+    font-weight: 600; /* Peso de fuente más ligero */
+    font-size: 1rem; /* Tamaño adecuado */
+    transition: background-color 0.3s, transform 0.2s; /* Transición suave */
+  }
+  
+  .back-button:hover {
+    background-color: #0051a8; /* Azul más oscuro para el hover */
+    transform: scale(1.05); /* Sutil efecto de escala */
+  }
+  
+  
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 2.2em; /* Reducir tamaño de título en pantallas pequeñas */
+    }
+  
+    .section-paragraph {
+      font-size: 1.1em; /* Reducir tamaño de texto */
+    }
+  
+    .back-button {
+      padding: 10px 18px; /* Ajustar padding del botón en pantallas pequeñas */
+    }
+  }
+  

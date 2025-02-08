@@ -1,0 +1,53 @@
+.section-container {
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco para un aspecto limpio */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 2em;
+    color: #2c3e50; /* Color más oscuro para un mejor contraste */
+    margin-bottom: 10px;
+}
+
+.reference-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.reference-list li {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #34495e; /* Color de texto más suave */
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+/* Estilo para el botón de retroceso */
+.back-button {
+    background-color: #007aff; /* Azul brillante similar al de Apple */
+    color: white; /* Texto en blanco */
+    padding: 12px 20px; /* Padding más suave */
+    border-radius: 8px; /* Bordes redondeados suaves */
+    text-decoration: none; /* Eliminar subrayado en el enlace */
+    font-weight: 600; /* Peso de fuente más ligero */
+    font-size: 1rem; /* Tamaño adecuado */
+    transition: background-color 0.3s, transform 0.2s; /* Transición suave */
+  }
+  
+  .back-button:hover {
+    background-color: #0051a8; /* Azul más oscuro para el hover */
+    transform: scale(1.05); /* Sutil efecto de escala */
+  }
+  
+.methodology-diagram {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Centrar el diagrama */
+}

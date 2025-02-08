@@ -1,0 +1,127 @@
+/* General */
+html, body, #root {
+  height: 100%; /* Asegura que la página ocupe el 100% de la altura */
+  width: 100%;  /* Asegura que la página ocupe el 100% del ancho */
+  margin: 0;
+  padding: 0; /* Elimina cualquier padding que pueda causar márgenes laterales */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif;
+  background-color: #f0f0f5; /* Color gris plomo iPhone */
+  color: #333; /* Texto oscuro para buena legibilidad */
+  display: flex;
+  flex-direction: column;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Asegura que el contenedor principal ocupe todo el alto disponible */
+  width: 100%;  /* Asegura que el contenedor principal ocupe todo el ancho disponible */
+  padding: 0 20px; /* Margen lateral para contenido centrado */
+  background-color: #f0f0f5; /* Fondo gris plomo para todo el contenedor */
+  box-sizing: border-box; /* Incluye el padding dentro del tamaño total */
+}
+
+main {
+  flex: 1;
+  padding: 40px 0; /* Espaciado grande en la parte superior e inferior */
+  width: 100%; /* Asegura que el contenido ocupe todo el ancho disponible */
+  max-width: 100%; /* Para asegurar que el contenido no exceda el ancho */
+  box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+}
+
+footer {
+  background-color: #1d1d1f; /* Color oscuro de fondo similar al de Apple */
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+  margin-top: auto; /* Asegura que el footer se quede en la parte inferior */
+  width: 100%;
+}
+
+.research-container {
+  padding: 40px 20px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Mayor espacio entre las tarjetas */
+  gap: 30px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 20px; /* Bordes muy suaves */
+  padding: 30px;
+  text-decoration: none;
+  color: #333;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra más sutil para dar profundidad */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Sombra más profunda en hover */
+}
+
+.video-section {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 15px 25px;
+  background-color: #0071e3; /* Azul Apple más brillante */
+  color: white;
+  text-decoration: none;
+  border-radius: 50px; /* Bordes redondeados estilo Apple */
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: 0.5px; /* Un poco de espaciado en el texto */
+  transition: background-color 0.3s, transform 0.3s ease-in-out;
+}
+
+.back-button:hover {
+  background-color: #005bb5; /* Azul más oscuro */
+  transform: translateY(-3px); /* Desplazamiento sutil */
+}
+
+/* Imagenes responsivas */
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px; /* Bordes suaves para las imágenes */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.responsive-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12); /* Sombra sutil al hacer hover en la imagen */
+}
+
+/* Asegura que el header o contenido ocupe el 100% del alto si hay mucho contenido */
+header, .content {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* Ajustes de flexbox */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1; /* Hace que el main ocupe todo el espacio disponible */
+}
+
+/* Estilo para contenedores flexibles */
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

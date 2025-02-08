@@ -1,0 +1,128 @@
+.section-container {
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 0 auto; /* Alineación centrada */
+}
+
+.section-title {
+    font-size: 2.5em;
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center; /* Alineación central para el título */
+}
+
+.subsection-title {
+    font-size: 1.75em;
+    color: #34495e;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.numbered-list {
+    margin: 20px 0;
+    padding-left: 30px;
+    font-size: 1.1em;
+}
+
+.numbered-list li {
+    margin-bottom: 10px;
+}
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 8px; /* Agregar bordes redondeados a la imagen */
+    transition: transform 0.3s ease;
+}
+
+.responsive-image:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el cursor sobre la imagen */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Centrado del botón */
+    margin-top: 30px;
+}
+
+/* Estilo para el botón de retroceso */
+.back-button {
+    background-color: #007aff; /* Azul brillante similar al de Apple */
+    color: white; /* Texto en blanco */
+    padding: 12px 20px; /* Padding más suave */
+    border-radius: 8px; /* Bordes redondeados suaves */
+    text-decoration: none; /* Eliminar subrayado en el enlace */
+    font-weight: 600; /* Peso de fuente más ligero */
+    font-size: 1rem; /* Tamaño adecuado */
+    transition: background-color 0.3s, transform 0.2s; /* Transición suave */
+  }
+  
+  .back-button:hover {
+    background-color: #0051a8; /* Azul más oscuro para el hover */
+    transform: scale(1.05); /* Sutil efecto de escala */
+  }
+  
+
+.methodology-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Sombra sutil para la tabla */
+}
+
+.methodology-table th, .methodology-table td {
+    border: 1px solid #e0e0e0;
+    padding: 12px;
+    text-align: left;
+    font-size: 1em;
+}
+
+.methodology-table th {
+    background-color: #2c3e50; /* Color oscuro para el encabezado */
+    color: white;
+    font-weight: 600;
+}
+
+.methodology-table tr:nth-child(even) {
+    background-color: #f4f6f7; /* Color alternativo suave para filas */
+}
+
+.methodology-table tr:hover {
+    background-color: #ecf0f1; /* Color de resaltado sutil */
+    cursor: pointer; /* Cursor pointer para filas interactivas */
+}
+
+.methodology-diagram {
+    width: 50%;
+    height: auto;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .section-container {
+        padding: 20px;
+    }
+
+    .section-title {
+        font-size: 2em;
+    }
+
+    .subsection-title {
+        font-size: 1.5em;
+    }
+
+    .back-button {
+        padding: 10px 15px;
+    }
+
+    .methodology-diagram {
+        width: 100%;
+        max-width: none; /* Esto asegura que la imagen ocupe el 100% en pantallas más pequeñas */
+    }
+}

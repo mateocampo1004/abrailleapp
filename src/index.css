@@ -1,0 +1,136 @@
+/* Restablecimiento de estilos generales */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+}
+
+/* Aseguramos que html y body ocupen todo el espacio */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", sans-serif;
+  background-color: #f0f0f5; /* Fondo gris plomo */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Asegura que el contenido se distribuya bien */
+}
+
+/* Asegura que la app ocupe todo el espacio disponible */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 0 20px; /* Margen lateral para contenido centrado */
+  background-color: #f0f0f5; /* Fondo gris plomo */
+  width: 100%;
+}
+
+/* Asegura que el contenedor principal ocupe el 100% */
+main {
+  flex: 1;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+footer {
+  background-color: #1d1d1f; /* Color oscuro de fondo similar al de Apple */
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+.research-container {
+  padding: 40px 20px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Mayor espacio entre las tarjetas */
+  gap: 30px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 20px; /* Bordes muy suaves */
+  padding: 30px;
+  text-decoration: none;
+  color: #333;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra más sutil para dar profundidad */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Sombra más profunda en hover */
+}
+
+.video-section {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 15px 25px;
+  background-color: #0071e3; /* Azul Apple más brillante */
+  color: white;
+  text-decoration: none;
+  border-radius: 50px; /* Bordes redondeados estilo Apple */
+  font-size: 1.2em;
+  font-weight: bold;
+  letter-spacing: 0.5px; /* Un poco de espaciado en el texto */
+  transition: background-color 0.3s, transform 0.3s ease-in-out;
+}
+
+.back-button:hover {
+  background-color: #005bb5; /* Azul más oscuro */
+  transform: translateY(-3px); /* Desplazamiento sutil */
+}
+
+/* Imagenes responsivas */
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px; /* Bordes suaves para las imágenes */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.responsive-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12); /* Sombra sutil al hacer hover en la imagen */
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Ocultar las barras de desplazamiento */
+html, body {
+    overflow: hidden; /* Elimina la barra de desplazamiento en todo el documento */
+  }
+  
+  body {
+    height: 100vh; /* Asegura que el cuerpo ocupe toda la altura de la pantalla */
+  }
+  
+  /* Si se requiere un contenedor con desplazamiento, pero sin que se vea la barra, se puede agregar esto: */
+  .scroll-container {
+    overflow: auto; /* Habilita el desplazamiento solo cuando sea necesario */
+    -ms-overflow-style: none;  /* Para IE 10+ */
+    scrollbar-width: none;  /* Para Firefox */
+  }
+  
+  .scroll-container::-webkit-scrollbar {
+    display: none;  /* Para Safari y Chrome */
+  }
+  

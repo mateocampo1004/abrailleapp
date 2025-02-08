@@ -1,0 +1,72 @@
+/* Contenedor de la sección */
+.section-container {
+  padding: 20px;
+  background-color: #ffffff; /* Fondo blanco limpio para un diseño minimalista */
+  border-radius: 12px; /* Bordes redondeados más suaves y modernos */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+}
+
+/* Título de la sección */
+.section-title {
+  font-size: 2.5em; /* Título destacado con un tamaño de fuente grande */
+  color: #2c3e50; /* Color oscuro para un contraste suave pero elegante */
+  font-weight: 600; /* Un poco más de énfasis en el texto */
+  margin-bottom: 20px; /* Espaciado abajo para separar del contenido */
+}
+
+/* Estilo de la tabla de resultados */
+.results-table {
+  width: 100%;
+  border-collapse: collapse; /* Evitar bordes dobles en las celdas */
+  margin: 20px 0; /* Espaciado adecuado alrededor de la tabla */
+  background-color: #f9fafb; /* Fondo muy claro para la tabla */
+}
+
+.results-table th, .results-table td {
+  border: 1px solid #e0e0e0; /* Borde gris muy suave */
+  padding: 12px; /* Padding cómodo y adecuado */
+  text-align: center; /* Alineación centrada para contenido de las celdas */
+  font-size: 1.1em; /* Tamaño de texto ligeramente mayor para mejorar la legibilidad */
+}
+
+.results-table th {
+  background-color: #f1f1f1; /* Fondo suave en las cabeceras de las columnas */
+  font-weight: 500; /* Cabeceras con un poco más de énfasis */
+}
+
+/* Estilo para las imágenes responsivas */
+.responsive-image {
+  max-width: 100%; /* Asegura que la imagen se adapte a la pantalla */
+  height: auto; /* Mantiene la proporción de la imagen */
+  margin: 20px 0; /* Espaciado entre la imagen y otros elementos */
+  border-radius: 8px; /* Bordes suavizados en la imagen */
+}
+
+/* Contenedor para los botones */
+.button-container {
+  margin-top: 20px; /* Margen superior para separación */
+}
+
+/* Estilo para el botón de retroceso */
+.back-button {
+  background-color: #007aff; /* Azul brillante similar al de Apple */
+  color: white; /* Texto en blanco */
+  padding: 12px 20px; /* Padding más suave */
+  border-radius: 8px; /* Bordes redondeados suaves */
+  text-decoration: none; /* Eliminar subrayado en el enlace */
+  font-weight: 600; /* Peso de fuente más ligero */
+  font-size: 1rem; /* Tamaño adecuado */
+  transition: background-color 0.3s, transform 0.2s; /* Transición suave */
+}
+
+.back-button:hover {
+  background-color: #0051a8; /* Azul más oscuro para el hover */
+  transform: scale(1.05); /* Sutil efecto de escala */
+}
+
+/* Estilo para los párrafos */
+.section-paragraph {
+  font-size: 1.1em; /* Tamaño de texto ligeramente mayor */
+  color: #555; /* Gris oscuro para un contraste suave */
+  line-height: 1.6; /* Mayor espacio entre líneas para mejorar la legibilidad */
+}
