@@ -60,7 +60,7 @@ const Home: React.FC = () => {
             <figcaption>Sesión de prueba con estudiantes.</figcaption>
           </figure>
           <figure>
-            <img src="/assets/field-test-2.jpg" alt="Prueba de campo 2" className="gallery-img"/>
+            <img src="../assets/prueba2_1.jpeg" alt="Prueba de campo 2" className="gallery-img"/>
             <figcaption>Interacción con el dispositivo en acción.</figcaption>
           </figure>
           <figure>
