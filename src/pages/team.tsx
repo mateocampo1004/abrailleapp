@@ -11,7 +11,7 @@ const Team: React.FC = () => {
         {/* Miembro 1 */}
         <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-3">
           <img 
-            src="ruta/a/imagen-gabriel.jpg" // Reemplaza con la ruta correcta de la imagen
+            src="src/assets/a2.jpg"
             alt="Gabriel Mateo Campo Guerrero"
             className="w-full h-48 object-cover rounded-t-xl transition-transform hover:scale-105"
           />
